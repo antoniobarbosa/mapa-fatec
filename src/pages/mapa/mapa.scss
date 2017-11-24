@@ -1,0 +1,26 @@
+page-mapa {
+    ion-scroll{
+        position: relative;     
+        margin: 0;
+        padding: 0;      
+        top: 0;
+        left: 0; 
+        height: 300px;
+    }     .mapa-container {
+    background: url(../../../assets/imgs/campus.png);
+    position: absolute;
+    top: -82px;
+    left: -96px;
+    width: 731px;
+    height: 449px;
+    
+}
+    .trajeto-container{
+        background:url("../../../assets/imgs/Oscar Machado - AB.png");
+        position: absolute;
+        top: 0;
+        left: 0;        
+        width: 731px;
+        height: 449px;        
+    }
+}
