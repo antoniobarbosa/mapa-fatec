@@ -1,4 +1,10 @@
 page-mapa {
+    .local-selecionado{
+        background-color:#00EE00;
+    }
+    .destino-selecionado{
+         background-color:#EE0000;
+    }
     ion-scroll{
         position: relative;     
         margin: 0;
@@ -16,11 +22,18 @@ page-mapa {
     
 }
     .trajeto-container{
-        background:url("../../../assets/imgs/Oscar Machado - AB.png");
+       
         position: absolute;
         top: 0;
         left: 0;        
         width: 731px;
         height: 449px;        
     }
+    .C-PS{
+         background:url("../../../assets/imgs/Oscar Machado - AB.png");
+    }
+        .AB-C{
+         background:url("../../../assets/imgs/AB - C.png");
+    }
 }
+

@@ -16,14 +16,30 @@
 <ion-content>
   <ion-scroll scrollX="true" scrollY="true">
     <div class="mapa-container"></div>
-    <div class="trajeto-container"></div>
+    <div  [ngClass]="trajetoCss()" class="trajeto-container"></div>
   </ion-scroll>
-  <div>
-    <h1>Clique na sua localização</h1>
+  <div *ngIf="querSelecionarLocal">
+    <h1>Qual a sua Localização?</h1>
   </div>
-  <div *ngIf="localSelecionado.description">
+
+  
+  <div *ngIf="!querSelecionarLocal">
+    <h1>Qual seu Destino?</h1>
+  </div>
+ 
+ 
+  <ion-list>
+    <button [ngClass]="{'local-selecionado':lugar==localSelecionado, 'destino-selecionado':destinoSelecionado==lugar}" ion-item *ngFor="let lugar of lugares" (click)="selecionaLocal($event,lugar)">
+      
+      {{lugar.nome}}
+      <div class="item-note" item-end>
+        {{lugar.descricao}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="localSelecionado.descricao">
     <div>
-      Descrição:{{localSelecionado.description}}
+      Descrição:{{localSelecionado.descricao}}
     </div>
   </div>
 </ion-content>

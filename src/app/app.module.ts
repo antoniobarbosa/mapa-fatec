@@ -9,6 +9,7 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { MapaPage } from "../pages/mapa/mapa";
+import { LugarProvider } from '../providers/lugar/lugar';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MapaPage } from "../pages/mapa/mapa";
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    LugarProvider
   ]
 })
 export class AppModule { }
