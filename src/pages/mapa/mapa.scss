@@ -13,7 +13,7 @@ page-mapa {
         left: 0; 
         height: 300px;
     }     .mapa-container {
-    background: url(assets/imgs/campus.png);
+    background: url(../assets/imgs/campus.png);
     position: absolute;
     top: -82px;
     left: -96px;
@@ -30,10 +30,10 @@ page-mapa {
         height: 449px;        
     }
     .C-PS{
-         background:url("assets/imgs/Oscar Machado - AB.png");
+         background:url("../assets/imgs/Oscar Machado - AB.png");
     }
         .AB-C{
-         background:url("assets/imgs/AB - C.png");
+         background:url("../assets/imgs/AB - C.png");
     }
 }
 
