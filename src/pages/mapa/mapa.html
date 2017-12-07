@@ -14,30 +14,42 @@
 
 
 <ion-content>
-  <ion-scroll scrollX="true" scrollY="true">
+  <ion-scroll scrollX="true" scrollY="true" class="mapa"  *ngIf="!mostraMapinhafn()">
     <div class="mapa-container"></div>
-    <div  [ngClass]="trajetoCss()" class="trajeto-container"></div>
+    <div [ngClass]="trajetoCss()" class="trajeto-container"></div>
   </ion-scroll>
-  <div *ngIf="querSelecionarLocal">
-    <h1>Qual a sua Localização?</h1>
-  </div>
+ 
 
-  
-  <div *ngIf="!querSelecionarLocal">
-    <h1>Qual seu Destino?</h1>
-  </div>
- 
- 
-  <ion-list>
-    <button [ngClass]="{'local-selecionado':lugar==localSelecionado, 'destino-selecionado':destinoSelecionado==lugar}" ion-item *ngFor="let lugar of lugares" (click)="selecionaLocal($event,lugar)">
+    <ion-item  *ngIf="mostraMapinhafn()">
+      <ion-card>
+        <img [src]="imagemsrc" >
+
+      </ion-card>
+
+
+     </ion-item>
+
+    <div *ngIf="querSelecionarLocal">
+      <h1>Qual a sua Localização?</h1>
+    </div>
+
+
+    <div *ngIf="!querSelecionarLocal">
+      <h1>Qual seu Destino?</h1>
+    </div>
+
+
+    <ion-list>
+      <button [ngClass]="{'local-selecionado':lugar==localSelecionado, 'destino-selecionado':destinoSelecionado==lugar}" ion-item
+        *ngFor="let lugar of lugares" (click)="selecionaLocal($event,lugar)">
       
       {{lugar.nome}}
      
     </button>
-  </ion-list>
-  <div *ngIf="localSelecionado.descricao">
-    <div>
-      Descrição:{{localSelecionado.descricao}}
+    </ion-list>
+    <div *ngIf="localSelecionado.descricao">
+      <div>
+        Descrição:{{localSelecionado.descricao}}
+      </div>
     </div>
-  </div>
 </ion-content>

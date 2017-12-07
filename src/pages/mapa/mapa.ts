@@ -24,9 +24,11 @@ export class MapaPage {
     descricao: false,
     id: "teste"
   };
+  imagemsrc = "assets/imgs/campus2.png"
   lugares = [];
+  public mostraMapinha = false;
   trajetos = [];
-  trajetoSelecionado = {rota:[]};
+  trajetoSelecionado = { rota: [], imagem: "", id: "" };
   querSelecionarLocal = true;
   constructor(public navCtrl: NavController, public navParams: NavParams, public lugarProvider: LugarProvider, public actionSheetCtrl: ActionSheetController) {
 
@@ -47,7 +49,9 @@ export class MapaPage {
       this.destinoSelecionado = lugar;
       for (let i = 0; i < this.trajetos.length; i++) {
         if (this.trajetos[i].id == this.localSelecionado.id + '-' + this.destinoSelecionado.id) {
-          this.trajetoSelecionado=this.trajetos[i]
+          this.trajetoSelecionado = this.trajetos[i]
+          this.imagemsrc = "assets/imgs/Merge " + this.trajetoSelecionado.id + '.png'
+          this.mostraMapinha = true;
           this.presentActionSheet();
         }
       }
@@ -55,19 +59,31 @@ export class MapaPage {
     }
 
   }
+  mostraMapinhafn(){
+    return this.mostraMapinha;
+  }
   trajetoCss() {
     return this.localSelecionado.id + "-" + this.destinoSelecionado.id
   }
 
   presentActionSheet() {
-    let botoes = this.trajetoSelecionado.rota.map((trajeto)=>{
-        return {text:trajeto}
+    let botoes = this.trajetoSelecionado.rota.map((trajeto) => {
+      return { text: trajeto }
     })
     let actionSheet = this.actionSheetCtrl.create({
       title: 'Trajeto',
-      buttons:botoes
-      
+      buttons: botoes
+
     });
+    let that = this;
+    actionSheet.onDidDismiss(function () {
+      console.log(that.mostraMapinha)
+      that.mostraMapinha = false;
+         console.log(that.mostraMapinha)
+    })
     actionSheet.present();
+  }
+  getImagem() {
+    return "assets/imgs/" + this.trajetoSelecionado.id + '.png'
   }
 }

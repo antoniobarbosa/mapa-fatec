@@ -5,7 +5,7 @@ page-mapa {
     .destino-selecionado{
          background-color:#EE0000;
     }
-    ion-scroll {
+    ion-scroll.mapa {
     /* margin: 0; */
     border: solid 4px;
     position: relative;
@@ -154,6 +154,16 @@ page-mapa .AB-ETE {
 page-mapa .ETE-AB {
   background: url("../assets/imgs/AB - ETESP.png");
 }
+
+.default{
+    position:relative;
+
+}
+ion-scroll{
+
+}
+
+
 
 
 

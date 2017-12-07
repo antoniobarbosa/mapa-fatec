@@ -80,7 +80,7 @@ export class LugarProvider {
 			rota: ["-Saia pelo norte do prédio Santhiago;",
 				"-Siga até o prédio em frente.",
 				"	<- À esquerda: entrada para CA",
-				"	-> Á direita: entrada para o Centro Paula Souza"], imagem: "Santhiago - Paula Souza.png"
+				"	-> Á direita: entrada para o Centro Paula Souza"], imagem: "assets/imgs/Santhiago - Paula Souza.png"
 		},
 		{
 			id: "PS-SAN",
@@ -89,21 +89,21 @@ export class LugarProvider {
 				"	Térreo: Sala de estudos, Biblioteca, Secretaria, Armários...",
 				"	1°andar: DTI, ",
 				"	2°andar: Laboratórios de informática",
-				"	3°andar: "], imagem: "Santhiago - Paula Souza.png"
+				"	3°andar: "], imagem: "assets/imgs/Santhiago - Paula Souza.png"
 		},
 		{
 			id: "SAN-OM",
 			rota: ["-Saia pelo norte do prédio Santhiago;",
 				"-Siga à direta;",
 				"-Vire à esquerda e atravesse a pracinha;",
-				"-Entrada à direita do prédio Oscar Machado."], imagem: "Santhiago - Oscar Machado.png"
+				"-Entrada à direita do prédio Oscar Machado."], imagem: "assets/imgs/Santhiago - Oscar Machado.png"
 		},
 		{
 			id: "OM-SAN",
 			rota: ["-Saia pelo leste do prédio Oscar Machado;",
 				"-Vire à direita e atravesse a pracinha;",
 				"-Vire à direita e suba rampa;",
-				"-Entrada ao norte do Prédio Santhiago."], imagem: "Santhiago - Oscar Machado.png"
+				"-Entrada ao norte do Prédio Santhiago."], imagem: "assets/imgs/Santhiago - Oscar Machado.png"
 		},
 		{
 			id: "SAN-ETE",
@@ -111,7 +111,7 @@ export class LugarProvider {
 				"-Siga à direita;",
 				"-Vire à esquerda e atravesse a pracinha;",
 				"-Viré à direita e atravesse o pátio;",
-				"-Entrada ao oeste da ETESP."], imagem: "Santhiago - ETESP.png"
+				"-Entrada ao oeste da ETESP."], imagem: "assets/imgs/Santhiago - ETESP.png"
 		},
 		{
 			id: "ETE-SAN",
@@ -119,21 +119,21 @@ export class LugarProvider {
 				"-Atravesse o pátio;",
 				"-Vire à esquerda e atravesse a pracinha;",
 				"-Vire à direita e suba a rampa;",
-				"-Entrada ao norte do Prédio Santhiago."], imagem: "Santhiago - ETESP.png"
+				"-Entrada ao norte do Prédio Santhiago."], imagem: "assets/imgs/Santhiago - ETESP.png"
 		},
 		{
 			id: "SAN-C",
 			rota: ["-Saia pelo norte do prédio Santhiago",
 				"-Vire à direita;",
 				"-Siga em frente e contorne o bloco C pela esquerda;",
-				"-Entrada ao norte do bloco C."], imagem: "Santhiago - C.png"
+				"-Entrada ao norte do bloco C."], imagem: "assets/imgs/Santhiago - C.png"
 		},
 		{
 			id: "C-SAN",
 			rota: ["-Saia pelo norte do bloco C;",
 				"-Vire à esquerda e contorne o bloco C;",
 				"-Vire à direta e suba a rampa;",
-				"-Entrada ao norte do Prédio Santhiago."], imagem: "Santhiago - C.png"
+				"-Entrada ao norte do Prédio Santhiago."], imagem: "assets/imgs/Santhiago - C.png"
 		},
 		{
 			id: "SAN-AB",
@@ -142,7 +142,7 @@ export class LugarProvider {
 				"-Siga em frente e contorne o bloco C pela esquerda;",
 				"-Vire à direita;",
 				"-Siga em frente até a segunda entrada à direita.",
-				"-Entrada ao norte do bloco AB"], imagem: "Santhiago - AB.png"
+				"-Entrada ao norte do bloco AB"], imagem: "assets/imgs/Santhiago - AB.png"
 		},
 		{
 			id: "AB-SAN",
@@ -150,21 +150,21 @@ export class LugarProvider {
 				"-Vire à esquerda e siga até o final do bloco C;",
 				"-Contorne à esquerda do bloco C;",
 				"-Vire à direita e suba a rampa;",
-				"-Entrada ao norte do Prédio santhiago."], imagem: "Santhiago - AB.png"
+				"-Entrada ao norte do Prédio santhiago."], imagem: "assets/imgs/Santhiago - AB.png"
 		},
 		{
 			id: "PS-OM",
 			rota: ["-Saia pelo sul do Centro Paula Souza;",
 				"-Vire à esquerda;",
 				"-Vire à esquerda e atravesse a pracinha;",
-				"-Entrada ao leste do prédio Oscar Machado."], imagem: "Paula Souza - Oscar Machado.png"
+				"-Entrada ao leste do prédio Oscar Machado."], imagem: "assets/imgs/Paula Souza - Oscar Machado.png"
 		},
 		{
 			id: "OM-PS",
 			rota: ["-Saia pelo leste do prédio Oscar Machado;",
 				"-Vire à direita e atravesse a pracinha;",
 				"-Vire à direita;",
-				"-Entrada ao sul do Centro Paula Souza."], imagem: "Paula Souza - Oscar Machado.png"
+				"-Entrada ao sul do Centro Paula Souza."], imagem: "assets/imgs/Paula Souza - Oscar Machado.png"
 		},
 		{
 			id: "PS-ETE",
@@ -172,7 +172,7 @@ export class LugarProvider {
 				"-Vire à esquerda;",
 				"-Vire à esquerda e atravesse a pracinha;",
 				"-Vire à direita e atravesse o pátio;",
-				"-Entrada ao oeste do prédio da ETESP."], imagem: "Paula Souza - ETESP.png"
+				"-Entrada ao oeste do prédio da ETESP."], imagem: "assets/imgs/Paula Souza - ETESP.png"
 		},
 		{
 			id: "ETE-PS",
@@ -180,52 +180,52 @@ export class LugarProvider {
 				"-Atravesse o pátio",
 				"-Vire à esquerda e atravesse a pracinha;",
 				"-Vire à direita;",
-				"-Entrada ao sul do Centro Paula Souza."], imagem: "Paula Souza - ETESP.png"
+				"-Entrada ao sul do Centro Paula Souza."], imagem: "assets/imgs/Paula Souza - ETESP.png"
 		},
 		{
 			id: "PS-C",
 			rota: ["-Saia pelo sul do Centro Paula Souza;",
 				"-Vire à esquerda;",
 				"-Siga em frente e contorne o bloco C pela esquerda;",
-				"-Entrada ao norte do bloco C."], imagem: "Paula Souza - C.png"
+				"-Entrada ao norte do bloco C."], imagem: "assets/imgs/Paula Souza - C.png"
 		},
 		{
 			id: "C-PS",
 			rota: ["-Saia pelo norte do bloco C;",
 				"-Vire à esquerda e contorne o bloco C;",
 				"-Vire à direita;",
-				"-Entrada ao sul do Centro Paula Souza."], imagem: "Paula Souza - C.png"
+				"-Entrada ao sul do Centro Paula Souza."], imagem: "assets/imgs/Paula Souza - C.png"
 		},
 		{
 			id: "OM-ETE",
 			rota: ["-Saia pelo leste do prédio Oscar Machado;",
 				"-Atravesse o pátio;",
-				"-Entrada pelo oeste do prédio da ETESP."], imagem: "Oscar Machado - ETESP.png"
+				"-Entrada pelo oeste do prédio da ETESP."], imagem: "assets/imgs/Oscar Machado - ETESP.png"
 		},
 		{
 			id: "ETE-OM",
 			rota: ["-Saia pelo oeste do prédio da ETESP;",
 				"-Atravesse o pátio;",
-				"-Entrada pelo leste do prédio Oscar Machado."], imagem: "Oscar Machado - ETESP.png"
+				"-Entrada pelo leste do prédio Oscar Machado."], imagem: "assets/imgs/Oscar Machado - ETESP.png"
 		},
 		{
 			id: "OS-C",
 			rota: ["-Saia pelo leste do prédio Oscar Machado;",
 				"-Siga em frente e vire à direita;",
-				"-Entrada pelo sul do bloco C."], imagem: "Oscar Machado - C.png"
+				"-Entrada pelo sul do bloco C."], imagem: "assets/imgs/Oscar Machado - C.png"
 		},
 		{
 			id: "C-OM",
 			rota: ["-Saia pelo norte do bloco C;",
 				"-Siga em frente e vire à esquerda;",
-				"-Entrada pelo leste do prédio Oscar Machado."], imagem: "Oscar Machado - C.png"
+				"-Entrada pelo leste do prédio Oscar Machado."], imagem: "assets/imgs/Oscar Machado - C.png"
 		},
 		{
 			id: "OM-AB",
 			rota: ["-Saia pelo leste do prédio Oscar Machado;",
 				"-Siga em frente e vire à direita;",
 				"-Vire à esquerda e siga até a segunda entrada à direita",
-				"-Entrada pelo norte do bloco AB."], imagem: "Oscar Machado - AB.png"
+				"-Entrada pelo norte do bloco AB."], imagem: "assets/imgs/Oscar Machado - AB.png"
 		},
 		{
 			id: "AB-OM",
@@ -233,19 +233,19 @@ export class LugarProvider {
 				"-Vire à esquerda e siga em frente;",
 				"-Vire à direita;",
 				"-Vire à esquerda;",
-				"-Entrada pelo leste do prédio Oscar Machado."], imagem: "Oscar Machado - AB.png"
+				"-Entrada pelo leste do prédio Oscar Machado."], imagem: "assets/imgs/Oscar Machado - AB.png"
 		},
 		{
 			id: "ETE-C",
 			rota: ["-Saia pelo oeste do prédio da ETESP;",
 				"-Siga em frente e vire à esquerda;",
-				"-Entrada pelo sul do bloco C."], imagem: "Etesp - C.png"
+				"-Entrada pelo sul do bloco C."], imagem: "assets/imgs/Etesp - C.png"
 		},
 		{
 			id: "C-ETE",
 			rota: ["-Saia pelo norte do bloco C;",
 				"-Siga em frente e vire à direita;",
-				"-Entrada pelo oeste do prédio da ETESP."], imagem: "Etesp - C.png"
+				"-Entrada pelo oeste do prédio da ETESP."], imagem: "assets/imgs/Etesp - C.png"
 		},
 		{
 			id: "AB-PS",
@@ -253,7 +253,7 @@ export class LugarProvider {
 				"-Vire à esquerda e siga até o final do bloco C;",
 				"-Contorne à esquerda do bloco C;",
 				"-Vire à direita;",
-				"-Entrada ao sul do Centro Paula Souza."], imagem: "AB - Paula Souza.png"
+				"-Entrada ao sul do Centro Paula Souza."], imagem: "assets/imgs/AB - Paula Souza.png"
 		},
 		{
 			id: "PS-AB",
@@ -262,27 +262,27 @@ export class LugarProvider {
 				"-Siga em frente e contorne o bloco C pela esquerda;",
 				"-Vire à direita;",
 				"-Siga em frente até a segunda entrada à direita.",
-				"-Entrada ao norte do bloco AB"], imagem: "AB - Paula Souza.png"
+				"-Entrada ao norte do bloco AB"], imagem: "assets/imgs/AB - Paula Souza.png"
 		},
 		{
 			id: "AB-ETE",
 			rota: ["-Saia pelo norte do bloco AB;",
 				"-Siga em frente;",
-				"-Entrada à direita do prédio da ETESP."], imagem: "AB - ETESP.png"
+				"-Entrada à direita do prédio da ETESP."], imagem: "assets/imgs/AB - ETESP.png"
 		},
 		{
 			id: "ETE-AB",
 			rota: ["-Saia pela direita do prédio da ETESP;",
 				"-Vire à direita e siga em frente;",
-				"-Entrada ao norte do bloco AB."], imagem: "AB - ETESP.png"
+				"-Entrada ao norte do bloco AB."], imagem: "assets/imgs/AB - ETESP.png"
 		},
 		{
 			id: "AB-C",
-			rota: ["-Siga a passarela interna entre os blocos."], imagem: "AB - C.png"
+			rota: ["-Siga a passarela interna entre os blocos."], imagem: "assets/imgs/AB - C.png"
 		},
 		{
 			id: "C-AB",
-			rota: ["-Siga a passarela interna entre os blocos."], imagem: "AB - C.png"
+			rota: ["-Siga a passarela interna entre os blocos."], imagem: "assets/imgs/AB - C.png"
 		}
 	];
 	constructor() {
