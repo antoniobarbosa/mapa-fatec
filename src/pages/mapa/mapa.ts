@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ActionSheetController } from 'ionic-angular';
 import { LugarProvider } from "../../providers/lugar/lugar";
 
 /**
@@ -26,8 +26,9 @@ export class MapaPage {
   };
   lugares = [];
   trajetos = [];
+  trajetoSelecionado = {rota:[]};
   querSelecionarLocal = true;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public lugarProvider: LugarProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public lugarProvider: LugarProvider, public actionSheetCtrl: ActionSheetController) {
 
   }
 
@@ -44,11 +45,29 @@ export class MapaPage {
     }
     else {
       this.destinoSelecionado = lugar;
+      for (let i = 0; i < this.trajetos.length; i++) {
+        if (this.trajetos[i].id == this.localSelecionado.id + '-' + this.destinoSelecionado.id) {
+          this.trajetoSelecionado=this.trajetos[i]
+          this.presentActionSheet();
+        }
+      }
       this.querSelecionarLocal = true;
     }
 
   }
   trajetoCss() {
-    return this.localSelecionado.id +"-"+ this.destinoSelecionado.id
+    return this.localSelecionado.id + "-" + this.destinoSelecionado.id
+  }
+
+  presentActionSheet() {
+    let botoes = this.trajetoSelecionado.rota.map((trajeto)=>{
+        return {text:trajeto}
+    })
+    let actionSheet = this.actionSheetCtrl.create({
+      title: 'Trajeto',
+      buttons:botoes
+      
+    });
+    actionSheet.present();
   }
 }

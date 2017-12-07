@@ -32,9 +32,7 @@
     <button [ngClass]="{'local-selecionado':lugar==localSelecionado, 'destino-selecionado':destinoSelecionado==lugar}" ion-item *ngFor="let lugar of lugares" (click)="selecionaLocal($event,lugar)">
       
       {{lugar.nome}}
-      <div class="item-note" item-end>
-        {{lugar.descricao}}
-      </div>
+     
     </button>
   </ion-list>
   <div *ngIf="localSelecionado.descricao">
